@@ -1,0 +1,1 @@
+[{"constant":false,"inputs":[{"name":"tokenAddr","type":"address"},{"name":"value","type":"uint256"}],"name":"depositApprove","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"}]
