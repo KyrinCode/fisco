@@ -1,7 +1,9 @@
 # fisco
  HTLC-based cross-chain protocol implemented on fisco-bcos
 
+0. Put modified python sdk for fisco-bcos to ./wallet/src/
 
+https://github.com/KyrinCode/python-sdk
 
 1. Setup multiple fisco-bcos chains with ./setup/auto.sh
 
@@ -145,7 +147,7 @@ oneWayTransfer refund 1 scrt2
 getBalanceInfo TokenA
 ```
 
-3. TwoWayExchange.sol
+6. TwoWayExchange.sol
 
 ![TwoWayExchange](TwoWayExchange.png)
 
