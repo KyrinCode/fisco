@@ -1498,3 +1498,222 @@
 
 # 2022-03-07 21:57:26.370386
 +exit
+
+# 2023-10-19 13:41:16.532344
++multi-deploy TokenA
+
+# 2023-10-19 13:42:42.617516
++transfer 1 TokenA 0x0000000000000000000000000000000000000000 100
+
+# 2023-10-19 13:43:28.923353
++getBalance 1 TokenA
+
+# 2023-10-19 13:43:43.836791
++getBalance 1 TokenA 0x0000000000000000000000000000000000000000
+
+# 2023-10-19 13:45:22.789795
++multi-deploy testApprove
+
+# 2023-10-19 13:46:16.636121
++approve 1 TokenA testApprove 200
+
+# 2023-10-19 13:46:39.031278
++allowed 1 TokenA testApprove
+
+# 2023-10-19 13:47:52.021863
++depositApprove 1 TokenA 300
+
+# 2023-10-19 13:49:14.726161
++depositApprove 1 TokenA 100
+
+# 2023-10-19 13:49:28.004442
++getBalance 1 TokenA
+
+# 2023-10-19 13:50:23.891224
++multi-deploy oneWayTransfer
+
+# 2023-10-19 13:51:07.998873
++multi-approve TokenA oneWayTransfer
+
+# 2023-10-19 13:51:33.863886
++getBalanceInfo TokenA
+
+# 2023-10-19 13:53:24.359530
++switchAccount 0x35f3b3afcd7329b98c4e550fc253c1fa890dc43d
+
+# 2023-10-19 13:53:58.552216
++switchAccount 0x5360cf77373e8e2eea6c59e3361948094a7e1c09
+
+# 2023-10-19 13:54:13.294786
++switchAccount 0xe2d3cfc6097c3cc6beed6c3ed28799fe58f45ae2
+
+# 2023-10-19 13:54:39.382100
++switchAccount 0x5360cf77373e8e2eea6c59e3361948094a7e1c09
+
+# 2023-10-19 13:55:05.558696
++createCus 0xe2d3cfc6097c3cc6beed6c3ed28799fe58f45ae2 scrt
+
+# 2023-10-19 13:59:57.492468
++viewTransfer scrt
+
+# 2023-10-19 14:01:03.301955
++oneWayTransfer deposit 200 scrt
+
+# 2023-10-19 14:01:16.041777
++getBalanceInfo TokenA
+
+# 2023-10-19 14:03:25.214333
++txPools oneWayTransfer 0x5360cf77373e8e2eea6c59e3361948094a7e1c09
+
+# 2023-10-19 14:03:32.433532
++txPools oneWayTransfer 0x5360cf77373e8e2eea6c59e3361948094a7e1c09 scrt
+
+# 2023-10-19 14:04:15.277813
++switchAccount 0xe2d3cfc6097c3cc6beed6c3ed28799fe58f45ae2
+
+# 2023-10-19 14:04:44.428073
++oneWayTransfer withdraw 1 0x5360Cf77373E8e2eEa6c59E3361948094A7e1C09 scrt
+
+# 2023-10-19 14:04:52.401863
++oneWayTransfer withdraw 2 0x5360Cf77373E8e2eEa6c59E3361948094A7e1C09 scrt
+
+# 2023-10-19 14:05:14.914815
++getBalanceInfo TokenA
+
+# 2023-10-19 14:12:45.079632
++switchAccount
+
+# 2023-10-19 14:13:05.873814
++switchAccount 0x5360cf77373e8e2eea6c59e3361948094a7e1c09
+
+# 2023-10-19 14:13:27.135637
++transfer 1 TokenA 0xa30379d93d4f6a98fbe1a526c090471a7180b955 10000
+
+# 2023-10-19 14:13:37.523832
++transfer 2 TokenA 0xa30379d93d4f6a98fbe1a526c090471a7180b955 10000
+
+# 2023-10-19 14:14:42.964239
++switchAccount 0xa30379d93d4f6a98fbe1a526c090471a7180b955
+
+# 2023-10-19 14:14:57.196347
++getBalanceInfo TokenA
+
+# 2023-10-19 14:15:17.975558
++multi-approve TokenA oneWayTransfer
+
+# 2023-10-19 14:16:10.656042
++oneWayTransfer deposit 500 scrt2 TokenA 0x5360cf77373e8e2eea6c59e3361948094a7e1c09
+
+# 2023-10-19 14:16:48.058133
++txPools oneWayTransfer 0xa30379d93d4f6a98fbe1a526c090471a7180b955 scrt2
+
+# 2023-10-19 14:17:03.310272
++getBalanceInfo TokenA
+
+# 2023-10-19 14:17:25.120077
++getBlockNumber 1
+
+# 2023-10-19 14:23:32.994149
++multi-deploy twoWayExchange
+
+# 2023-10-19 14:23:49.549932
++switchAccount 0x5360cf77373e8e2eea6c59e3361948094a7e1c09
+
+# 2023-10-19 14:23:54.775047
++multi-deploy twoWayExchange
+
+# 2023-10-19 14:24:54.194338
++switchAccount
+
+# 2023-10-19 14:25:13.771628
++switchAccount 0x5360cf77373e8e2eea6c59e3361948094a7e1c09
+
+# 2023-10-19 14:25:58.588027
++transfer 1 TokenA 0x1d8deee6fa2d32d28fe2a5404d1e711c575be9c8 10000
+
+# 2023-10-19 14:26:05.014016
++transfer 2 TokenA 0x1d8deee6fa2d32d28fe2a5404d1e711c575be9c8 10000
+
+# 2023-10-19 14:26:12.281452
++switchAccount 0x1d8deee6fa2d32d28fe2a5404d1e711c575be9c8
+
+# 2023-10-19 14:26:17.068319
++getBalanceInfo TokenA
+
+# 2023-10-19 14:27:40.761112
++switchAccount 0x5360cf77373e8e2eea6c59e3361948094a7e1c09
+
+# 2023-10-19 14:27:45.069836
++multi-approve TokenA twoWayExchange
+
+# 2023-10-19 14:27:53.367991
++switchAccount 0x1d8deee6fa2d32d28fe2a5404d1e711c575be9c8
+
+# 2023-10-19 14:27:58.085046
++multi-approve TokenA twoWayExchange
+
+# 2023-10-19 14:28:49.311817
++createMsg msg
+
+# 2023-10-19 14:32:07.964723
++viewExchange msg
+
+# 2023-10-19 14:34:06.432178
++twoWayExchange deposit msg
+
+# 2023-10-19 14:34:24.520324
++switchAccount 0x5360cf77373e8e2eea6c59e3361948094a7e1c09
+
+# 2023-10-19 14:34:29.652833
++twoWayExchange deposit msg
+
+# 2023-10-19 14:36:48.353390
++txPools twoWayExchange 0x1d8deee6fa2d32d28fe2a5404d1e711c575be9c8 msg
+
+# 2023-10-19 14:37:03.173549
++txPools twoWayExchange 0x5360cf77373e8e2eea6c59e3361948094a7e1c09 msg
+
+# 2023-10-19 14:37:44.520515
++getBlockNumber 1
+
+# 2023-10-19 14:39:18.411453
++checkTxs msg 0x1d8deee6fa2d32d28fe2a5404d1e711c575be9c8 0x5360cf77373e8e2eea6c59e3361948094a7e1c09
+
+# 2023-10-19 14:39:30.217788
++checkTxs msg 0x5360cf77373e8e2eea6c59e3361948094a7e1c09 0x1d8deee6fa2d32d28fe2a5404d1e711c575be9c8
+
+# 2023-10-19 14:41:59.660497
++twoWayExchange refund 1 msg
+
+# 2023-10-19 14:48:20.351266
++createConfirmMsg msg 0x5360cf77373e8e2eea6c59e3361948094a7e1c09 0x1d8deee6fa2d32d28fe2a5404d1e711c575be9c8
+
+# 2023-10-19 14:48:57.626605
++firstConfirmMsgSign msg
+
+# 2023-10-19 14:49:45.094192
++switchAccount 0x1d8deee6fa2d32d28fe2a5404d1e711c575be9c8
+
+# 2023-10-19 14:49:55.302391
++secondConfirmMsgSign msg
+
+# 2023-10-19 14:50:44.303085
++twoWayExchange withdraw 1 0x5360cf77373e8e2eea6c59e3361948094a7e1c09 msg
+
+# 2023-10-19 14:50:53.812373
++twoWayExchange withdraw 2 0x5360cf77373e8e2eea6c59e3361948094a7e1c09 msg
+
+# 2023-10-19 14:51:20.023857
++txPools twoWayExchange 0x5360cf77373e8e2eea6c59e3361948094a7e1c09 msg
+
+# 2023-10-19 14:57:30.394963
++switchAccount 0x5360cf77373e8e2eea6c59e3361948094a7e1c09
+
+# 2023-10-19 14:58:00.574777
++twoWayExchange withdraw 1 0x1d8deee6fa2d32d28fe2a5404d1e711c575be9c8 msg
+
+# 2023-10-19 14:58:09.512063
++twoWayExchange withdraw 2 0x1d8deee6fa2d32d28fe2a5404d1e711c575be9c8 msg
+
+# 2023-10-19 14:58:29.519188
++getBalanceInfo TokenA
